@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} Quizz {% endblock %}
+{% block content %}
+
+        <div class="card text-bg-light mb-3" style="max-width: 70rem;margin-left:120px;;text-align:center;margin-top:100px;">
+          <div class="card-header">
+              <h1 style="font-size:3rem;">End of the Game</h1>
+          </div>
+          <div class="card-body">
+              <h1 style="font-size:4.5rem;">Score: {{ score }} / {{ number_of_questions }}</h1>
+          </div>
+        </div>
+        <button class="btn btn-light" style="margin-left:550px;"><a style="font-size:3rem;color:black;text-decoration:none;" href="{{ url_for('home') }}">Home page</a></button>
+
+
+{% endblock %}
